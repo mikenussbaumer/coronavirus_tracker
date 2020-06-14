@@ -1,0 +1,36 @@
+.jfx-button {
+    -jfx-button-type: RAISED;
+    -fx-background-color: #05d356;
+    -fx-text-fill: white;
+}
+
+.home-tab {
+    -fx-background-color: #007900;
+}
+
+.tab {
+    -fx-background-color: #007900;
+    -fx-pref-width: 510;
+    -fx-pref-height: 60;
+    -fx-alignment: center;
+}
+
+.menu-bar {
+    -fx-base: #007900;
+    -fx-background-color: #007900;
+}
+
+.tab-header-background {
+    -fx-background-color: #007900;
+}
+
+.jfx-tab-pane:top .depth-container .tab-header-area .headers-region .tab-selected-line {
+    -fx-background-color: white;
+}
+
+.card {
+    -fx-background-color: grey;
+    -fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 0);
+    -fx-background-insets: 10;
+    -fx-background-radius: 10;
+}

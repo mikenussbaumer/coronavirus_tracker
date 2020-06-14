@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1044.0" stylesheets="@assets/styles/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.mikenussbaumer.coronavirus_tracker.client.Controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="723.0" prefWidth="1044.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXTabPane prefHeight="723.0" prefWidth="1044.0">
+                           <tabs>
+                              <Tab text="Global stats">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="400.0">
+                                       <children>
+                                          <Text layoutX="339.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Global corona statistics" textAlignment="CENTER" wrappingWidth="366.22900390625">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Text>
+                                          <LineChart layoutX="370.0" layoutY="112.0" prefHeight="446.0" prefWidth="639.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </LineChart>
+                                          <JFXButton disable="true" layoutX="53.0" layoutY="112.0" opacity="0.9" prefHeight="51.0" prefWidth="286.0" text="Cases today:  1000" />
+                                          <JFXButton disable="true" layoutX="53.0" layoutY="272.0" opacity="0.9" prefHeight="51.0" prefWidth="286.0" text="Cases on 14/05/2020: 1000" />
+                                          <JFXDatePicker layoutX="56.0" layoutY="196.0" prefHeight="31.0" prefWidth="281.0" />
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab text="Local stats">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="400.0">
+                                       <children>
+                                          <Text layoutX="339.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local corona statistics" textAlignment="CENTER" wrappingWidth="366.22900390625">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Text>
+                                          <LineChart layoutX="370.0" layoutY="129.0" prefHeight="446.0" prefWidth="639.0">
+                                             <xAxis>
+                                                <CategoryAxis side="BOTTOM" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <JFXButton disable="true" layoutX="37.0" layoutY="203.0" opacity="0.9" prefHeight="51.0" prefWidth="286.0" text="Cases today:  1000" />
+                                          <JFXButton disable="true" layoutX="37.0" layoutY="321.0" opacity="0.9" prefHeight="51.0" prefWidth="286.0" text="Cases on 14/05/2020: 1000" />
+                                          <JFXDatePicker layoutX="40.0" layoutY="269.0" prefHeight="31.0" prefWidth="281.0" />
+                                          <JFXComboBox layoutX="37.0" layoutY="149.0" prefHeight="27.0" prefWidth="281.0" />
+                                          <Text layoutX="40.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" wrappingWidth="221.22900390625">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                           </tabs>
+                        </JFXTabPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
